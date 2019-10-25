@@ -1,8 +1,10 @@
 //package com.jx;
 
 import java.util.Arrays;
+// This a checkout time and pul request test
 // Time: 平均：O(n log n)       最坏：O(n log n)       最好：O(n log n)
 // Space: O (n)   以为每一次递归都用了一个临时temp【】  其实还有个递归栈为 logN
+// This 1024 test
 public class MergeSort {
 
     public static void main(String[] args) {
@@ -39,6 +41,9 @@ public class MergeSort {
             } else {
                 temp[k++] = arr[j++];
             }
+
+
+
         }
         while (i <= mid) {
             temp[k++] = arr[i++];
@@ -51,4 +56,9 @@ public class MergeSort {
             arr[left++] = temp[index];
         }
     }
+
+
+
+
+
 }
